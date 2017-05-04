@@ -13,10 +13,3 @@
     </form>
 </body>
 </html>
-<script runat="server">
-void Page_Load(Object sender, EventArgs e)
-{
-  lblName.Text = "Hello " + Context.User.Identity.Name + ".";
-  lblAuthType.Text = "You were authenticated using " +   Context.User.Identity.AuthenticationType + ".";
-}
-</script>
